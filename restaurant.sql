@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 11, 2025 at 07:08 PM
+-- Generation Time: Sep 16, 2025 at 05:44 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -24,22 +24,22 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `product item`
+-- Table structure for table `productitem`
 --
 
-CREATE TABLE `product item` (
+CREATE TABLE `productitem` (
   `ProductID` int(11) NOT NULL,
   `ProductName` text NOT NULL,
-  `Product Description` text DEFAULT NULL,
-  `Product Cost` int(11) NOT NULL,
-  `Quantity in Cart` int(11) NOT NULL
+  `ProductDescription` text DEFAULT NULL,
+  `ProductCost` int(11) NOT NULL,
+  `QuantityInCart` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `product item`
+-- Dumping data for table `productitem`
 --
 
-INSERT INTO `product item` (`ProductID`, `ProductName`, `Product Description`, `Product Cost`, `Quantity in Cart`) VALUES
+INSERT INTO `productitem` (`ProductID`, `ProductName`, `ProductDescription`, `ProductCost`, `QuantityInCart`) VALUES
 (1, 'chicken Taco', 'Corn tortilla with onion, cilantro, and Chiken.', 4, 0),
 (2, 'Beef Taco', 'Corn tortilla with onion, cilantro, and Beef.', 4, 0),
 (3, 'Chips & Salsa', 'Fresh basket of tortilla chips, and red salsa.', 1, 0),
@@ -50,16 +50,13 @@ INSERT INTO `product item` (`ProductID`, `ProductName`, `Product Description`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `shopping cart`
+-- Table structure for table `shoppingcart`
 --
 
-CREATE TABLE `shopping cart` (
-  `Shopping ID` int(11) NOT NULL,
+CREATE TABLE `shoppingcart` (
+  `ShoppingID` int(11) NOT NULL,
   `ProductID` int(11) NOT NULL,
-  `ProductName` int(11) NOT NULL,
-  `Quantity Ordered` varchar(150) NOT NULL,
-  `Product Cost` varchar(150) NOT NULL,
-  `Product Total` varchar(255) NOT NULL
+  `ProductTotal` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -67,16 +64,16 @@ CREATE TABLE `shopping cart` (
 --
 
 --
--- Indexes for table `product item`
+-- Indexes for table `productitem`
 --
-ALTER TABLE `product item`
+ALTER TABLE `productitem`
   ADD PRIMARY KEY (`ProductID`);
 
 --
--- Indexes for table `shopping cart`
+-- Indexes for table `shoppingcart`
 --
-ALTER TABLE `shopping cart`
-  ADD PRIMARY KEY (`Shopping ID`),
+ALTER TABLE `shoppingcart`
+  ADD PRIMARY KEY (`ShoppingID`),
   ADD KEY `ProductID` (`ProductID`);
 
 --
@@ -84,10 +81,10 @@ ALTER TABLE `shopping cart`
 --
 
 --
--- Constraints for table `shopping cart`
+-- Constraints for table `shoppingcart`
 --
-ALTER TABLE `shopping cart`
-  ADD CONSTRAINT `shopping cart_ibfk_1` FOREIGN KEY (`ProductID`) REFERENCES `product item` (`ProductID`);
+ALTER TABLE `shoppingcart`
+  ADD CONSTRAINT `shoppingcart_ibfk_1` FOREIGN KEY (`ProductID`) REFERENCES `productitem` (`ProductID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
