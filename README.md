@@ -1,3 +1,3 @@
-# 1.4-Working-with-GitHUb
+# Project Name: 310L Project Jessy Restaurant Menu
 Student Name: Jennifer Henriquez
-Hello-World....
+My web app features a responsive menu with an "Add" button that allows users to select items. At the bottom of the table, a "Go to Cart" button directs users to the checkout cart, where they can view the items they selected along with a breakdown of the subtotal, tax, shipping and handling fees, and the total cost. The cart also includes options to delete an item or edit it to include special requests such as "No onion" or "Add extra cheese." Once ready, users can click the "Checkout and Return to Menu" button, which clears the cart and redirects them to a fresh menu screen to begin a new order.
