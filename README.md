@@ -1,7 +1,7 @@
 # Project Name: Restaurant Menu Code
 
 ## Project Description
-
+-Restaurant Menu Code is a PHP-based web application that allows users to browse a restaurant menu, add items to a cart, customize requests, and complete checkout. It includes database integration, dynamic item editing, and a simple two-page layout for menu and cart management.
 ## Project Tasks
 **Task 1: Set up the development environment**
 - Install the database named productitem, build the tables and add data
@@ -30,8 +30,10 @@
   
 ## Language Used
 -**HTML, CSS, PHP**: For frontend development
--**MySQL database and Apache**: For database management
-
+-**MySQL database**: For database management
+-**Apache and XAMPP**: For local server hosting
 ## Development Process Used
 - **Agile Methodology**: Emphasizing iterative development, continuous feedback, and collaboration.
+  
 ## Link to Project
+-https://github.com/jenhen1082/310L-Project-Jessy-Restaurant
