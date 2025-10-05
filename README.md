@@ -7,7 +7,7 @@
 - Install the database named productitem, build the tables and add data
 - Configure GitHub repository
   
-- **Task 2: Plan the project**
+**Task 2: Plan the project**
 - write two separete page, one for the menu and one for the cart.
 - set up the menu first, and write the style to test the advances with the menu
 - add the "add" button into each product item
