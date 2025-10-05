@@ -17,16 +17,21 @@
 - add the edit and delete button to the product items selected
 - add a text box when edit is press to written a resques that would be added tothe product item selected
 - add aa checkout button that would clean the cart and send to the main menu
-- week 1
-- week 2
-- week 3
-- week 4
-- week 5
 
 ## Project Skills Learned
-
+-planning a website
+-Creating Databases and Tables with phpMyAdmin
+-Building a PHP Web Application
+- Assessment: Building and Debugging a PHP WebApp
+- Data Access to Include Create, Update, and Delete
+- Creating a PHP Web Application using MVC
+- Writing a PHP MVC Web Application
+- A PHP Application with Database Interactions
+  
 ## Language Used
+-**HTML, CSS, PHP**: For frontend development
+-**MySQL database and Apache**: For database management
 
 ## Development Process Used
-
+- **Agile Methodology**: Emphasizing iterative development, continuous feedback, and collaboration.
 ## Link to Project
